@@ -1,5 +1,6 @@
 import React from "react";
-import AddTodoForm from "./AddTodoForm";
+import AddTodoFormContainer from "../containers/AddTodoFormContainer";
+import TodosContainer from '../containers/TodosContainer'
 import "./App.css";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
       <header>
         <h1>My Todo List</h1>
       </header>
-      <AddTodoForm />
+      <AddTodoFormContainer />
+      <TodosContainer/>
     </div>
   );
 }
