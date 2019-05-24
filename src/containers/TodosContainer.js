@@ -5,7 +5,7 @@ import { toggleTodo } from "../actions";
 
 const TodosContainer = props => {
   let todos = this.props.todos.map(todo => (
-    <TodoItem key={todo.id} {...todo} toggleTodo={this.props.toggleTodo} />
+    <TodoItem key={todo.id} {...todo} toggleTodo={props.toggleTodo} />
   ));
   return <div>{todos}</div>;
 };
